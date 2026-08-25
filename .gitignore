@@ -1,3 +1,4 @@
 *.before-restore-*.bak
 *.tmp
+*.tmp.zip
 Thumbs.db

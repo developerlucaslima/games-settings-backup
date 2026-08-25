@@ -1,0 +1,2 @@
+VERSION=1
+Lucas Lima:gender=2;skincolor=0.54,0.38,0.25;name=Lucas|Lima;hair=Cornrows|0.6235294342041016,0.42352941632270813,0.16862745583057404;stubble=2;chesthair=2;beard=;beardstubble=2;voiceStyle=Hank;voicePitch=62;Belt=Base.Belt2;Hat=Base.Hat_Beany|0,0.003921568859368563,0;Eyes=Base.Glasses_Reading|2;TankTop=Base.Vest_DefaultTEXTURE_TINT|0,0,0;Shirt=Base.Shirt_FormalTINT|0,0,0;Tshirt=Base.Tshirt_DefaultTEXTURE_TINT|0,0,0;Pants=Base.Trousers_DefaultTEXTURE_TINT|0,0,0;Socks=Base.Socks_Long|0,0,0;Shoes=Base.Shoes_TrainerTINT|0,0,0;Necklace=Base.Necklace_Crucifix;
