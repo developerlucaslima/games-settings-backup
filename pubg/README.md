@@ -16,7 +16,19 @@ O arquivo original fica em:
 O `Input.ini` dessa instalação está vazio; as configurações relevantes estão em
 `GameUserSettings.ini`.
 
-## Restaurar depois de formatar
+## Direção dos scripts
+
+- `restore.ps1`: copia o snapshot do repositório para o PUBG instalado neste
+  computador. Este é o fluxo padrão quando o pedido for "atualizar minhas
+  configurações", inclusive depois de instalar ou formatar o computador.
+- `backup.ps1`: copia a configuração atual do computador para o repositório. Use
+  somente quando houver um pedido explícito para atualizar o backup ou o
+  repositório.
+
+Não execute `backup.ps1`, commit ou push apenas porque foi solicitado atualizar as
+configurações do jogo no computador.
+
+## Atualizar as configurações deste computador (fluxo padrão)
 
 1. Instale e abra o PUBG pelo menos uma vez; depois feche o jogo.
 2. Clone este repositório ou copie o backup para o computador.
@@ -29,7 +41,7 @@ powershell.exe -ExecutionPolicy Bypass -File .\restore.ps1
 Se já existir uma configuração, o script cria uma cópia com o sufixo
 `.before-restore-AAAA-MM-DD_HH-mm-ss.bak` antes de substituí-la.
 
-## Atualizar o backup
+## Atualizar o backup no repositório (somente com solicitação explícita)
 
 Com o PUBG fechado, execute:
 
@@ -37,6 +49,7 @@ Com o PUBG fechado, execute:
 powershell.exe -ExecutionPolicy Bypass -File .\backup.ps1
 git add config\GameUserSettings.ini
 git commit -m "Atualiza configurações do PUBG"
+git push
 ```
 
 O script remove `OutgameUserDatas` do snapshot. Esse campo contém um token
